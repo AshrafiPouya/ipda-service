@@ -1,0 +1,5 @@
+temp/
+resources/
+exports/
+core/__pycache__/
+.git/
