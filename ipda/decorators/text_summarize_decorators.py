@@ -4,12 +4,13 @@ def command_line(func):
     def inner(obj):
         fname = input('Enter filename: ')
        
-        for root, dirs, files in os.walk("./ipda/temp"):
+        for root, dirs, files in os.walk("./ipda/exports"):
             if not fname in files:
                 print('There is no such file')
                 return
+        f = open(f"./ipda/exports/{fname}", "r")
 
-        result = func(obj, fname)
+        result = func(obj, f.read())
         
         print("Operation completed successfully")
 

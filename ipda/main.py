@@ -1,5 +1,7 @@
 from core.downloader import DownloadManager
 from core.voice_to_text import VoiceToText
+from core.text_summarization import TextSummarization
+from core.text_to_voice import TextToVoice
 
 def start():
     EOF = False
@@ -16,7 +18,10 @@ def start():
                 VoiceToText().vtt()
             
             case "ts":
-                VoiceToText().vtt()
+                TextSummarization().summarize()
+            
+            case "ttv":
+                TextToVoice.ttv()
 
             case _:
                 print('invalid command, use help')
@@ -24,4 +29,3 @@ def start():
 
 if __name__ == "__main__":
     start()
-    # download_file()
