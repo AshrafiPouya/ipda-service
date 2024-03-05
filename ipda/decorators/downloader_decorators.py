@@ -8,6 +8,8 @@ def command_line(func):
         fname = 0
         find = True
         while find:
+            if not os.path.exists('./ipda/temp'):
+                os.mkdir(path='./ipda/temp')
             for root, dirs, files in os.walk("./ipda/temp"):
                 find = False
                 for file in files:

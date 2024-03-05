@@ -14,6 +14,8 @@ class FileHandler:
         fname = 0
         find = True
         while find:
+            if not os.path.exists(f'./ipda/{destination}'):
+                os.mkdir(path=f'./ipda/{destination}')
             for root, dirs, files in os.walk(f"./ipda/{destination}"):
                 find = False
                 for file in files:
@@ -32,6 +34,7 @@ class FileHandler:
 
         if not fname:
             fname = self.get_file_name("exports")
+
 
         f = open(f"./ipda/exports/{fname}.txt", "a")
         f.write(content)

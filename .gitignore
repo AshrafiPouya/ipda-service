@@ -1,0 +1,8 @@
+ipda/temp/
+ipda/resources/
+ipda/exports/
+ipda/lab/
+ipda/core/__pycache__/
+ipda/decorators/__pycache__/
+.git/
+venv/
