@@ -1,3 +1,9 @@
+# What tasks can ipda perform?
+
+1. With this service, you can extract text from videos and audio files.
+2. Summarize the extracted text for easier comprehension.
+3. Convert the summarized text or the original content into speech using any desired voice, providing a more accessible format for users.
+
 ## Install Dependencies
 
 ```
